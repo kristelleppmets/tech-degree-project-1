@@ -23,9 +23,7 @@ let quotes = [
   },
   {
     quote: "Whatever the mind of man can conceive and believe, it can achieve.",
-    source: "Napoleon Hill",
-    citation: "",
-    year: ""
+    source: "Napoleon Hill"
   },
   {
     quote: "One day I will find the right words, and they will be simple.",
@@ -35,9 +33,7 @@ let quotes = [
   },
   {
     quote: "Strive not to be a success, but rather to be of value.",
-    source: "Albert Einstein",
-    citation: "",
-    year: "399 BC"
+    source: "Albert Einstein"
   },
   {
     quote: "An unexamined life is not worth living.",
@@ -63,8 +59,9 @@ function getRandomQuote() {
 /***
  `printQuote` function:
    * Creating a variable that calls the getRandomQuote() function
-   * Creating a variable that initiates your HTML string
+   * Creating a variable that initiates your HTML string with the first two elements, their classNames, and the quote and source properties
    * Using if statements to check if the citation and the year properties exists
+   * If they do, concatenating the elements, appropriate classNames, and properties to the HTML string
    * Closing the HTML string
    * Setting the innerHTML of the quote-box div to equal the complete HTML string
 ***/
