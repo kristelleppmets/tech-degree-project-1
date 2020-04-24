@@ -48,18 +48,27 @@ let quotes = [
 ];
 
 /***
- * `getRandomQuote` function
+ `getRandomQuote` function:
+   * Creating a variable that generates a random number between zero and the last index in the `quotes` array
+   * Using the random number variable to grab a random object from the `quotes` array, and storing it in a variable
+   * Returning the variable storing the random quote object
 ***/
+
 function getRandomQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length) + 1;
   var quoteRandom = quotes[randomNumber];
   return quoteRandom;
 };
 
-
 /***
- * `printQuote` function
+ `printQuote` function:
+   * Creating a variable that calls the getRandomQuote() function
+   * Creating a variable that initiates your HTML string
+   * Using if statements to check if the citation and the year properties exists
+   * Closing the HTML string
+   * Setting the innerHTML of the quote-box div to equal the complete HTML string
 ***/
+
 function printQuote() {
   var randomQuote = getRandomQuote();
   var quoteMessage = `<p class="quote">${randomQuote.quote}</p>`;
@@ -74,7 +83,6 @@ function printQuote() {
   document.getElementById('quote-box').innerHTML = quoteMessage;
 };
 
-/***
- * click event listener for the print quote button
-***/
+ // Click event listener for the print quote button
+
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
