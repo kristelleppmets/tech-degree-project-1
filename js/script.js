@@ -5,9 +5,8 @@ project 1 - A Random Quote Generator
 
 
 /***
- * `quotes` array
- * date & citation only appear if this information is known
-***/
+ * `quotes` array, its keys and values
+ ***/
 
 let quotes = [
   {
@@ -52,8 +51,8 @@ let quotes = [
 /***
  `getRandomQuote` function:
    * Creating a variable that generates a random number between zero and the last index in the `quotes` array
-   * Using the random number variable to grab a random object from the `quotes` array, and storing it in a variable
-   * Returning the variable storing the random quote object
+   * Picking a random object from the `quotes` array by using the randomNumber variable, and storing it in a quoteRandom variable
+   * Returning the variable quoteRandom that stores the random quote object
 ***/
 
 function getRandomQuote() {
@@ -64,12 +63,12 @@ function getRandomQuote() {
 
 /***
  `printQuote` function:
-   * Creating a variable that calls the getRandomQuote() function
-   * Creating a variable that initiates your HTML string with the first two elements, their classNames, and the quote and source properties
-   * Using if statements to check if the citation and the year properties exists
-   * If they do, concatenating the elements, appropriate classNames, and properties to the HTML string
-   * Closing the HTML string
-   * Setting the innerHTML of the quote-box div to equal the complete HTML string
+   * Calling the getRandomQuote() function with randomQuote variable
+   * Creating a variable quoteMessage that starts the HTML string with the first two elements (quote and source), their classNames and properties
+   * Checking if the citation and the year properties exist (with if statements)
+   * If true, concatenating the elements (their classNames and properties) to the HTML string, and therefore only appear if this information is true
+   * Closing the quoteMessage HTML string
+   * The complete HTML string will then equal the innerHTML of the quote-box div
 ***/
 
 function printQuote() {
