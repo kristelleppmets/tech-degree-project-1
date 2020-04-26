@@ -17,13 +17,17 @@ let quotes = [
     year: "1944"
   },
   {
-    quote: "Progress is not in enhancing what is, but in advancing toward what will be.",
-    source: "Khalil Gibran",
-    citation: "A Handful of Sand on the Shore"
+    quote: "Our knowledge of life is limited to death.",
+    source: "Erich Maria Remarque",
+    citation: "All Quiet on the Western Front",
+    year: "1929"
   },
   {
-    quote: "Whatever the mind of man can conceive and believe, it can achieve.",
-    source: "Napoleon Hill"
+    quote: "Have patience with everything that remains unsolved in your heart - live in the question.",
+    source: "Rainer Maria Rilke",
+    citation: "Letters to a Young Poet",
+    year: "1929"
+
   },
   {
     quote: "One day I will find the right words, and they will be simple.",
@@ -32,8 +36,10 @@ let quotes = [
     year: "1958"
   },
   {
-    quote: "Strive not to be a success, but rather to be of value.",
-    source: "Albert Einstein"
+    quote: "No one really starts anything new, Mrs. Nemur. Everyone builds on other men’s failures. There is nothing really original in science. What each man contributes to the sum of knowledge is what counts.",
+    source: "Daniel Keyes",
+    citation: "Flowers for Algernon",
+    year: "1959"
   },
   {
     quote: "An unexamined life is not worth living.",
