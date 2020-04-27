@@ -3,7 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-
 /***
  * `quotes` array, its keys and values
  ***/
@@ -83,6 +82,7 @@ function printQuote() {
     };
   quoteMessage += '</p>';
   document.getElementById('quote-box').innerHTML = quoteMessage;
+  setTimeout(function(){quoteMessage}, 2000);
 };
 
  // Click event listener for the print quote button
