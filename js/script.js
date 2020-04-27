@@ -1,11 +1,9 @@
-/******************************************
+/*
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
-******************************************/
+*/
 
-/***
- * `quotes` array, its keys and values
- ***/
+// quotes` array, its keys and values
 
 let quotes = [
   {
@@ -47,12 +45,12 @@ let quotes = [
   }
 ];
 
-/***
+/*
  `getRandomQuote` function:
    * Creating a variable that generates a random number between zero and the last index in the `quotes` array
    * Picking a random object from the `quotes` array by using the randomNumber variable, and storing it in a quoteRandom variable
    * Returning the variable quoteRandom that stores the random quote object
-***/
+*/
 
 function getRandomQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length) + 1;
@@ -60,7 +58,7 @@ function getRandomQuote() {
   return quoteRandom;
 };
 
-/***
+/*
  `printQuote` function:
    * Calling the getRandomQuote() function with randomQuote variable
    * Creating a variable quoteMessage that starts the HTML string with the first two elements (quote and source), their classNames and properties
@@ -68,7 +66,7 @@ function getRandomQuote() {
    * If true, concatenating the elements (their classNames and properties) to the HTML string, and therefore only appear if this information is true
    * Closing the quoteMessage HTML string
    * The complete HTML string will then equal the innerHTML of the quote-box div
-***/
+*/
 
 function printQuote() {
   var randomQuote = getRandomQuote();
@@ -85,14 +83,24 @@ function printQuote() {
   randomize();
 };
 
+/*
+ `randomColors` function:
+   * Returns random color
+   * Code found from https://css-tricks.com/snippets/javascript/random-hex-color/
+*/
+
 function randomColors() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
+/***
+ `randomize` function:
+   * Changes background color of div with id="randomColor" to a random color
+***/
+
 function randomize() {
   document.getElementById('randomColor').style.backgroundColor = randomColors();
 }
-
 
  // Click event listener for the print quote button
 
