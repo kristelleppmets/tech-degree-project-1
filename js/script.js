@@ -82,8 +82,17 @@ function printQuote() {
     };
   quoteMessage += '</p>';
   document.getElementById('quote-box').innerHTML = quoteMessage;
-  setTimeout(function(){quoteMessage}, 2000);
+  randomize();
 };
+
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+function randomize() {
+  document.getElementById('randomColor').style.backgroundColor = randomColors();
+}
+
 
  // Click event listener for the print quote button
 
